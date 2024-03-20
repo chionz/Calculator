@@ -1,0 +1,100 @@
+#This Programme is to develope a simple calculator that can:
+#Make simple Addition
+#Subtraction
+#Multiplication
+#Division
+
+import math
+
+#Defining Functions
+def add():
+    return a + b
+
+def subtract():
+    return a - b
+
+def multiply():
+    return a * b
+
+def divide():
+    return a / b
+
+#Select between complex and simple maths
+
+def mode():
+    print("Mode")
+    print("1. Simple ")
+    print("2. Complex ")
+
+
+    simple = 1
+    complex = 2
+
+    modeoperate = int(input("Choose Mode "))
+    if modeoperate == 1:
+        prntsimple()
+
+    if modeoperate == 2:
+        prntcomplex()
+
+#User Mode Operation 1
+def prntsimple():
+    print("Select a mode")
+    print("1. Addition")
+    print("2. Subtraction")
+    print("3. Multiplication")
+    print("4. Division")
+
+    global p
+    p = int(input("Select a mode "))
+    
+    global a 
+    a = float(input("Input you First Number "))
+    global b
+    b = float(input("Input you second Number "))
+  
+  # Simple Maths  
+    if p == 1:
+        print(add())
+       
+    
+    if p == 2:
+        print(subtract())
+
+    if p == 3:
+        print(multiply())
+
+    if p == 4:
+        print(divide())
+
+
+#Complex Maths
+
+def prntcomplex():
+    print("Select a Mode")
+    print("5. Square root")
+    print("6. Log base 10")
+
+    op = int(input("Choose Operation "))
+    x = float(input("Input Figure for Calculation "))
+    
+
+    def square():
+        return math.sqrt(x)
+
+    def log():
+      return math.log10(x)
+
+    if op == 5:
+        print(square())
+
+    if op == 6:
+        print(log())
+    
+
+while True:
+    mode()
+   
+
+
+
