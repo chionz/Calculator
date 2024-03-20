@@ -74,6 +74,10 @@ def prntcomplex():
     print("Select a Mode")
     print("5. Square root")
     print("6. Log base 10")
+    print("7. tan")
+    print("8. sin")
+    print("9. cos")
+    print("10. pi")
 
     op = int(input("Choose Operation "))
     x = float(input("Input Figure for Calculation "))
@@ -85,12 +89,35 @@ def prntcomplex():
     def log():
       return math.log10(x)
 
+    def tan():
+        return math.tan(x)
+
+    def sin():
+        return math.sin(x)
+
+    def cos():
+        return math.cos(x)
+    
+    def pi():
+        return math.pi
+
     if op == 5:
         print(square())
 
     if op == 6:
         print(log())
     
+    if op == 7:
+        print(tan())
+
+    if op == 8:
+        print(sin())
+
+    if op == 9:
+        print(cos())
+
+    if op == 10:
+        print(x * math.pi)
 
 while True:
     mode()
