@@ -22,8 +22,7 @@ def divide():
 #Mode Select between complex and simple maths
 
 def mode():
-    print("Mode")
-    print("1. Simple\n2. Complex")
+    print("Mode\n\n1. Simple\n2. Complex")
 
     modeoperate = int(input("Choose Mode "))
     if modeoperate == 1:
@@ -65,7 +64,7 @@ def prntsimple():
 #Complex Maths
 
 def prntcomplex():
-    print("Select a Operation")
+    print("Select a Operation\n")
     print("5. Square root\n6. Log base 10\n7. tan\n8. sin\n9. cos\n10. pi")
 
     op = int(input("Choose Operation "))
@@ -112,6 +111,9 @@ def prntcomplex():
     if op == 10:
         print(x * math.pi)
 
-while True:
-    mode()
+def calc():
+    while True:
+        mode()
+
+calc()
    
